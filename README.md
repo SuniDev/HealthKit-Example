@@ -1,2 +1,1 @@
-# HealthKit-Example
-Apple Framework HealthKit Example
+# Swift-StepsCount-Example (with. Apple Framework HealthKit)
