@@ -49,6 +49,7 @@
 		EA5695932C214AC7000A192F /* HealthKitExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthKitExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5695972C214AC7000A192F /* HealthKitExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitExampleUITests.swift; sourceTree = "<group>"; };
 		EA5695992C214AC7000A192F /* HealthKitExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA5695A62C214F1B000A192F /* HealthKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		EA5695752C214AC6000A192F /* HealthKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				EA5695A62C214F1B000A192F /* HealthKitExample.entitlements */,
 				EA5695762C214AC6000A192F /* AppDelegate.swift */,
 				EA5695782C214AC6000A192F /* SceneDelegate.swift */,
 				EA56957A2C214AC6000A192F /* ViewController.swift */,
@@ -440,11 +442,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitExample/HealthKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3T5QFYSPG5;
+				DEVELOPMENT_TEAM = L5QPALV85S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthKitExample/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "앱이 HealthKit 데이터를 공유할 때 사용자에게 표시되는 메시지";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "앱이 HealthKit 데이터를 업데이트할 때 사용자에게 표시되는 메시지";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -456,7 +461,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = suni.dev.HealthKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TriCycle.HealthKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -469,11 +474,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitExample/HealthKitExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3T5QFYSPG5;
+				DEVELOPMENT_TEAM = L5QPALV85S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthKitExample/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "앱이 HealthKit 데이터를 공유할 때 사용자에게 표시되는 메시지";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "앱이 HealthKit 데이터를 업데이트할 때 사용자에게 표시되는 메시지";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -485,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = suni.dev.HealthKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TriCycle.HealthKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
